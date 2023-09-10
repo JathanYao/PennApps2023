@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct PennApps2023App: App {
+    @StateObject private var globalData = gv()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(globalData)
         }
     }
 }

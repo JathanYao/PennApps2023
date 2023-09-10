@@ -15,6 +15,7 @@
 		D2F0DAD62AABE71F00A6EC8A /* PennApps2023Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0DAD52AABE71F00A6EC8A /* PennApps2023Tests.swift */; };
 		D2F0DAE02AABE71F00A6EC8A /* PennApps2023UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0DADF2AABE71F00A6EC8A /* PennApps2023UITests.swift */; };
 		D2F0DAE22AABE71F00A6EC8A /* PennApps2023UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0DAE12AABE71F00A6EC8A /* PennApps2023UITestsLaunchTests.swift */; };
+		D45222DC2AAD84DA00BC0188 /* global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45222DB2AAD84DA00BC0188 /* global.swift */; };
 		D4E5B90A2AACF0C700DC33ED /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5B9092AACF0C700DC33ED /* Answer.swift */; };
 		D4E5B90C2AACF0ED00DC33ED /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5B90B2AACF0ED00DC33ED /* AnswerRow.swift */; };
 		D4E5B90E2AACF10F00DC33ED /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5B90D2AACF10F00DC33ED /* QuestionView.swift */; };
@@ -54,6 +55,7 @@
 		D2F0DADB2AABE71F00A6EC8A /* PennApps2023UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PennApps2023UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F0DADF2AABE71F00A6EC8A /* PennApps2023UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennApps2023UITests.swift; sourceTree = "<group>"; };
 		D2F0DAE12AABE71F00A6EC8A /* PennApps2023UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennApps2023UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D45222DB2AAD84DA00BC0188 /* global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = global.swift; sourceTree = "<group>"; };
 		D4E5B9092AACF0C700DC33ED /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		D4E5B90B2AACF0ED00DC33ED /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
 		D4E5B90D2AACF10F00DC33ED /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				D4E5B9132AACF16500DC33ED /* PrimaryButton.swift */,
 				D4E5B9172AACF48400DC33ED /* Trivia.swift */,
 				D4E5B9192AACF7B300DC33ED /* TriviaManager.swift */,
+				D45222DB2AAD84DA00BC0188 /* global.swift */,
 			);
 			path = PennApps2023;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45222DC2AAD84DA00BC0188 /* global.swift in Sources */,
 				D2F0DAC72AABE71D00A6EC8A /* ContentView.swift in Sources */,
 				D4E5B9162AACF1AF00DC33ED /* TriviaView.swift in Sources */,
 				D4E5B9182AACF48400DC33ED /* Trivia.swift in Sources */,

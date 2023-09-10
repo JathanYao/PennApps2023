@@ -2,27 +2,30 @@
 //  TriviaView.swift
 //  TriviaGame
 //
-//  Created by Stephanie Diep on 2021-12-17.
+//
 //
 
 import SwiftUI
 
 struct TriviaView: View {
     @EnvironmentObject var triviaManager: TriviaManager
-
+    @EnvironmentObject var globalData: gv
     var body: some View {
         if triviaManager.reachedEnd {
+            
             VStack(spacing: 20) {
                 Text("Trivia Game")
-
+                    .padding()
+                    .font(.system(size: 40, weight: .semibold))
                 Text("Congratulations, you completed the game! 🥳")
-                
-                Text("You scored \(triviaManager.score) out of \(triviaManager.length)")
-                
+                    .font(.system(size: 30, weight: .semibold))
+                Text("You scored \(triviaManager.score) points!")
+                    .font(.system(size: 30, weight: .semibold))
                 Button {
                     Task.init {
                         await triviaManager.fetchTrivia()
                     }
+                    globalData.points += triviaManager.score
                 } label: {
                     PrimaryButton(text: "Play again")
                 }

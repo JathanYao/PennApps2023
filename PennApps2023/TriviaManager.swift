@@ -12,7 +12,6 @@ class TriviaManager: ObservableObject {
     // Variables to set trivia and length of trivia
     private(set) var trivia: [Trivia.Result] = []
     @Published private(set) var length = 0
-    
     // Variables to set question and answers
     @Published private(set) var index = 0
     @Published private(set) var question: AttributedString = ""
@@ -94,10 +93,9 @@ class TriviaManager: ObservableObject {
     // Function to know that user selected an answer, and update the score
     func selectAnswer(answer: Answer) {
         answerSelected = true
-        
         // If answer is correct, increment score
         if answer.isCorrect {
-            score += 1
+            score += 50
         }
     }
 }
